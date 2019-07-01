@@ -1,0 +1,25 @@
+
+// Name: Julie Yeung 
+// Date: Nov. 01, 2018
+// Title: written.text
+
+Test cases
+1. Input: 0 0, 8 0, 8 8, 0 8
+Test for corner coordinates
+2. Input: 0<= row < 9, 0<= col < 9
+Test for out of bound coordinates
+3. Input: top, bottom, left or right edges
+Test for edge of board coordinates
+4. Input: 7 7, 7 7
+Tests for repeated inputs
+5. Prints board with all mines (without affecting state of game) 
+Tests for winning case when all safe squares uncovered 
+6. Input: if mine has been hit
+Tests for the losing case
+7. Wrote a function to test probability of mine assignment over the long run
+8. Wrote a 3x3 array to debug the non-working corner on a smaller scale
+
+How I Tested
+1. I outputted the coordinates of the mines so that I could enter coordinates that didn't end the game. 
+2. I had a bug where the top left corner always returned the wrong number of mines. In order to test this, I created a separate, smaller, and constant (3x3) array to control where the mines are. I also used preprocessing commands such as #ifdef to test.
+3. I also created a "cheat_mode" bool; when this is true, the program prints out another board at the beginning with the location of all the mines
